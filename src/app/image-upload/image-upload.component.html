@@ -1,0 +1,6 @@
+<div style="text-align: center; justify-content: left;">
+    <!-- <p>image-upload works!</p> -->
+    <p>User Name: <input (input)="onUserNameChange($event)"></p>
+    <p>Select Files: <input type="file" (change)="onFileSelected($event)" multiple accept="image/*,video/*" max="5"></p>
+    <p><button (click)="sendImagesToBackend()" [disabled]="imageFiles.length == 0 || userName === ''">Send Images</button></p>
+</div>

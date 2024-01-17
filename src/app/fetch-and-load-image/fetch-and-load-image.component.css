@@ -1,0 +1,32 @@
+.image-grid {
+  padding-top: 2rem;
+  background-color: #0808084f;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+  gap: 10px; /* Adjust spacing between images */
+}
+
+.image-grid img {
+  width: 100%;
+  border: 1px solid #0a0a0a;
+  border-radius: 5px;
+  background-color: #617491;
+  height: 200px; /* Adjust image height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.image-grid img:hover {
+  opacity: 0.85; /* Adjust opacity as desired */
+  border-color: #ccc; /* Adjust border color as desired */
+}
+
+
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
